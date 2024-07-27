@@ -1,0 +1,71 @@
+# Site settings
+title: Monitoring hepatitis C treatment uptake in Australia
+email: jcarson@kirby.unsw.edu.au
+description: >- # this means to ignore newlines until "baseurl:"
+  Monitoring hepatitis C treatment uptake in Australia Issue #14 newsletter reports national 
+  HCV treatment and retreatment trends in Australia during 2016 to 2023. This newsletter 
+  describes trends in HCV treatment, retreatment for reinfection and treatment failure, 
+  the population receiving treatment and the clinicians prescribing treatment along with 
+  trends for the states and territories of Australia. PBS data of DAAs dispensed in 
+  Australia between March 2016 and December 2023 were used to prepare this report. 
+  Detailed methodology can be found in the methods and references section.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://jojocarson.github.io/monitoring-hcv-treatment" # the base hostname & protocol for your site
+github_username: jojocarson
+
+# Build settings
+# theme: minimal-mistakes-jekyll # Comment out or remove the local theme setting
+# Build settings
+markdown: kramdown
+theme: minima
+#remote_theme: benbalter/retlab # Replace with your chosen remote theme
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Default configurations (if needed)
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+  # _drafts
+  - scope:
+      path: ""
+      type: drafts
+    values:
+      layout: single
+
+# Additional configurations for the theme (if any, adjust based on your chosen theme)
+theme_settings:
+  # Add any theme-specific settings here if required
