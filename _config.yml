@@ -16,7 +16,6 @@ github_username: jojocarson
 # Build settings
 markdown: kramdown
 theme: minima
-remote_theme: benbalter/retlab # Replace with your chosen remote theme
 
 plugins:
   - jekyll-feed
@@ -56,7 +55,3 @@ defaults:
       type: drafts
     values:
       layout: single
-
-# Additional configurations for the theme (if any, adjust based on your chosen theme)
-theme_settings:
-  # Add any theme-specific settings here if required
