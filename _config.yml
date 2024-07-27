@@ -14,14 +14,12 @@ url: "https://jojocarson.github.io" # the base hostname & protocol for your site
 github_username: jojocarson
 
 # Build settings
-markdown: kramdown
-theme: minima
-remote_theme: benbalter/retlab # Replace with your chosen remote theme
+theme: minimal-mistakes-jekyll
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-remote-theme
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default.

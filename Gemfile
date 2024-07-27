@@ -1,18 +1,9 @@
 source "https://rubygems.org"
 
-gem "jekyll"
-gem "jekyll-include-cache"
-gem "jekyll-sitemap"
-gem "jekyll-remote-theme"
-gem "minima"
+gemspec
 
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-end
+gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 
-platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", ">= 1", "< 3"
-  gem "tzinfo-data"
-end
-
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
+gem "minimal-mistakes-jekyll"
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
