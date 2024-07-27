@@ -1,8 +1,14 @@
 source "https://rubygems.org"
 
-gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
+# GitHub Pages requires these dependencies.
+gem "github-pages", group: :jekyll_plugins
 
-gem "jekyll", "~> 4.2.0"
+# Other plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 gem "jekyll-sitemap", group: :jekyll_plugins
-gem "jekyll-feed", group: :jekyll_plugins
+
+# Remote theme
+gem "jekyll-remote-theme", group: :jekyll_plugins
+
+# Theme
+gem "minimal-mistakes-jekyll"
