@@ -63,4 +63,5 @@ defaults:
 
 # Additional configurations for the theme (if any, adjust based on your chosen theme)
 theme_settings:
-  # Add any theme-specific settings here if required
+  search_enabled: true
+  # Add any other theme-specific settings here
