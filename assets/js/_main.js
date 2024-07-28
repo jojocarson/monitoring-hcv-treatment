@@ -3,6 +3,15 @@
    ========================================================================== */
 
 $(document).ready(function () {
+  function adjustSidebar() {
+      var mastheadHeight = $('.masthead').outerHeight();
+      $('.sidebar').css('top', mastheadHeight + 'px');
+  }
+
+  adjustSidebar(); // Adjust on load
+  $(window).resize(adjustSidebar); // Adjust on window resize
+});
+  
   // FitVids init
   $("#main").fitVids();
 
