@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>DAA trends</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.css"> <!-- Ensure this path is correct -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="layout--home">
+  <div class="masthead">
+    <div class="masthead__menu">
+      <nav class="site-nav">
+        <ul>
+          <li class="masthead__menu-item"><a href="../index.html">Summary</a></li>
+          <li class="masthead__menu-item"><a href="daa-trends.html">DAA trends</a></li>
+          <li class="masthead__menu-item"><a href="retreatment-trends.html">Retreatment trends</a></li>
+          <li class="masthead__menu-item"><a href="population-trends.html">Population trends</a></li>
+          <li class="masthead__menu-item"><a href="prescriber-trends.html">Prescriber trends</a></li>
+          <li class="masthead__menu-item"><a href="state-trends.html">State and Territory trends</a></li>
+          <li class="masthead__menu-item"><a href="methods.html">Methodology</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="masthead__inner-wrap"></div>
+  <div class="initial-content">
+    <div id="main" role="main">
+        <div class="archive">
+            <h2 class="archive__title">Methodology</h2>
+            <h3 class="archive__subtitle">Treatment</h3>
+            <p>Pharmaceutical Benefits Scheme (PBS) data of all DAA prescriptions dispensed in Australia between March 2016 and 
+                December 2023 in Australia were used in the analysis. The first DAA prescription was considered initial treatment. 
+                Prescriber type was defined based on the prescriber derived major speciality codes recorded by PBS. 
+                In this coding system, medical trainees (i.e., registrars) are considered as specialists. Jurisdictions are 
+                based on the patient residence at the time of treatment or retreatment prescription. More details of methodology 
+                were described previously<sup>1</sup>.</p>
+            <h3 class="archive__subtitle">Treatment discontinuation</h3>
+            <p> DAA treatment is typically dispensed in 28-day supplies. Treatment discontinuation was defined as one or more repeat 
+                prescription (28-days or more) of the authorised duration not dispensed. Individuals who discontinued initial treatment
+                and restarted a different regimen ≤28 days before the estimated end of treatment date (calculated as date of dispensation
+                plus the number of daily doses dispensed) were considered treatment switches or lost prescriptions and were not 
+                considered treatment discontinuations. Where the first DAA prescribed was discontinued and the second DAA prescribed
+                was initiated within 28 days, this was considered the same treatment to account for extended durations of therapy. 
+                Individuals commencing treatment in the last quarter of 2023 were given at least three months of follow up following
+                initial dispensation to fill prescription repeats ensure sufficient time for completion of treatment. Individuals 
+                who were dispensed the whole treatment course at a single time were also excluded from this analysis. More details 
+                of methodology were described previously<sup>2</sup>.</p>
+            <h3 class="archive__subtitle">Retreatment</h3>
+            <p>Retreatment was defined as commencement of a different DAA prescription any time after estimated end of treatment date 
+                (unless initial regimen was discontinued). Reason for retreatment (treatment failure or reinfection) is not captured 
+                in PBS data. A supervised machine learning model (random forest architecture; sensitivity 96%, specificity 97%) was
+                developed using real-world standard-of-care data from the REACH-C study (10843 treated; 350 retreated with reason 
+                available)<sup>3,4</sup>. The model was applied to pharmaceutical benefits scheme data to assess trends in retreatment for 
+                reinfection and treatment failure. Details of the machine learning algorithm, model training procedure, and model 
+                performance metrics were described previously<sup>5</sup>.</p>
+            <h1 id="page-title" class="page__title"></h1>
+            <h3 class="archive__subtitle">References</h3>
+            <div class="list__item">
+                <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                <p class="archive__item-title no_toc" itemprop="headline">
+                <a href="https://pubmed.ncbi.nlm.nih.gov/29274192" rel="permalink">1. Hajarizadeh B, Grebely J, Matthews GV, Martinello M, Dore GJ. 
+                        Uptake of direct acting antiviral treatment for chronic hepatitis C in Australia. Journal of Viral Hepatitis 
+                        2018; 25(6): 640-8</a></p>
+                </article>
+                <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                    <p class="archive__item-title no_toc" itemprop="headline">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/36995991" 
+                    rel="permalink">2. Carson JM, Barbieri S, Matthews GV, Dore GJ, Hajarizadeh B. Increasing national trend of 
+                    direct-acting antiviral discontinuation among people treated for HCV 2016–2021. Hepatology Communications 2023; 
+                    7(4): e0125.</a> </p>
+                </article>
+                <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                    <p class="archive__item-title no_toc"><a href="https://pubmed.ncbi.nlm.nih.gov/34426040" 
+                        rel="permalink">3. Carson JM, Hajarizadeh B, Hanson J, O’Beirne J, Iser D, Read P, Balcomb A, Davies J, 
+                        Doyle JS, Yee J, Martinello M, Marks P, Dore GJ, Matthews GV. Effectiveness of treatment for hepatitis C 
+                        virus reinfection following direct acting antiviral therapy in the REACH-C cohort. International Journal 
+                        of Drug Policy 2021; 96: 103422.</a> </p>
+                </article>
+                <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                    <p class="archive__item-title no_toc"><a href="https://pubmed.ncbi.nlm.nih.gov/35583922" 
+                        rel="permalink">4. Carson JM, Hajarizadeh B, Hanson J, O’Beirne J, Iser D, Read P, Balcomb A, Davies J, 
+                        Doyle JS, Yee J, Martinello M, Marks P, Matthews GV, Dore GJ. Retreatment for hepatitis C virus direct-acting 
+                        antiviral therapy virological failure in primary and tertiary settings: The REACH-C cohort. Journal of Viral 
+                        Hepatitis 2022; 29(8): 661–76.</a></p>
+                </article>
+                <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+                    <p class="archive__item-title no_toc" itemprop="headline">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/36152766" 
+                    rel="permalink">5. Carson JM, Barbieri S, Matthews GV, Dore GJ, Hajarizadeh B. National trends in retreatment 
+                    of HCV due to reinfection or treatment failure in Australia. Journal of Hepatology 2023; 78(2): 260-70.s </a></p>
+                </article> 
+            </div>
+        </div>
+    </div>
+    <div class="page__footer">
+        <footer>
+            <div class="page__footer-follow social-icons">
+            <a class="btn--linkedin" href="https://www.linkedin.com/in/joanne-carson-b320a527b" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="btn--github" href="https://github.com/jojocarson" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <p></p> 
+            </div>
+            <div class="page__footer-copyright">
+            <a href="https://www.kirby.unsw.edu.au/research/reports/monitoring-hepatitis-c-treatment-uptake-australia-issue-14-july-2024">
+                <strong>Reference for citations:</strong> Carson JM et al. Monitoring hepatitis C treatment uptake in Australia (Issue 14). <br> 
+                The Kirby Institute, UNSW, Sydney NSW, Australia, July 2024 DOI: http://doi.org/10.26190/unsworks/30340
+            </a>
+            </div>
+        </footer>
+        </div>
+    </div>
+    <script src="../assets/js/main.min.js"></script>
+</body>
+</html>
+    
+      
